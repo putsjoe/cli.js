@@ -1,5 +1,5 @@
 <html>
-<script> src="cli.js"</script>
+<script src="cli.js"> </script>
 <style>
 div#clidiv { width: 50%; margin:auto auto; border-radius: 2px;
     //border: black solid 2px;
@@ -12,6 +12,14 @@ input#cli { border: none; padding: 25px;
 }
 button#enter { display: none; }
 
+div#view1, div#view2 
+{ 
+        width: 28%;
+        float: left;
+        height: 75%;
+        padding: 5%;
+}
+
 </style>
 
 <div id="clidiv">
@@ -19,9 +27,8 @@ button#enter { display: none; }
 </div>
 <button onclick="run();" id="enter"> </button>
 
-<div id="infobtm">
-
-</div>
+<div id="view1"> </div>
+<div id="view2"> </div>
 
 <script> document.onload = document.getElementById("cli").focus(); </script>
 </html>

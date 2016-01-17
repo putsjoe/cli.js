@@ -6,36 +6,18 @@ function run() {
     //console.log(input);
     document.getElementById("cli").style.outline = "blue thick solid";
     
+    var v1 = document.getElementById("view1");
+    var v2 = document.getElementById("view2");
+    
     switch(inp) {
     
-    case "trade": case "t": trade(); break;
-    case "help": case "?": help(); break;;
-    case "buy":
-        if (input[1] && input[2]) { 
-            console.log("Both present");
-            firstin = input[1];
-            secin = input[2];
-            buyer(firstin,secin);
-        }
-        else {  buyhelp();  }
-    break;;
-    case "sell":
-        if (input[1] && input[2]) { 
-            console.log("Both present");
-            firstin = input[1];
-            secin = input[2];
-            seller(firstin,secin);
-        }
-        else {  sellhelp();  }
-    break;;
-    case "credit": credit(); break;;
-    case "play": play(input[1]); break;;
-    case "seed": showbtm(localStorage.getItem("seed")); break;;
-    case "oven": case "o": oven(); break;;
-    case "move": move(); break;;
-    default:
-        document.getElementById("cli").style.outline = "red thick solid";
-      break;;
+        case "trade": case "t": 
+            v1.innerHTML = "hello";
+            v2.innerHTML = "Jello"; 
+        break;
+        default:
+            //document.getElementById("cli").style.outline = "red thick solid";
+            cli.style.outline = "red thick solid";
     }
 }
 
