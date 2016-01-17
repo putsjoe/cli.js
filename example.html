@@ -1,0 +1,27 @@
+<html>
+<script> src="cli.js"</script>
+<style>
+div#clidiv { width: 50%; margin:auto auto; border-radius: 2px;
+    //border: black solid 2px;
+}
+
+input#cli { border: none; padding: 25px; 
+            font-size: 22; width: 100%;
+            max-width: 100%; overflow: hidden;
+            outline: solid blue thick; 
+}
+button#enter { display: none; }
+
+</style>
+
+<div id="clidiv">
+<input id="cli" onkeydown="if (event.keyCode == 13) document.getElementById('enter').click()" maxlength="45">  </input>
+</div>
+<button onclick="run();" id="enter"> </button>
+
+<div id="infobtm">
+
+</div>
+
+<script> document.onload = document.getElementById("cli").focus(); </script>
+</html>
