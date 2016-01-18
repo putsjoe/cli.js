@@ -49,3 +49,8 @@ function run() {
             cli.style.outline = "red thick solid";
     }
 }
+
+
+var CLI = { Iam:"CLI object" };
+
+

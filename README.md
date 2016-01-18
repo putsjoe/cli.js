@@ -1,5 +1,5 @@
 # cli.js
-## A Javascript CLI framework
+## A CLI JavaScript Framework
 
 Bringing the command line to the web, control your data with a powerful command line.
 
