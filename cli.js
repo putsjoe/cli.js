@@ -43,9 +43,34 @@ function run() {
     }
 }
 
+function View (id) {
+    this.id = id;
+    this.init = function() {
+        var vw = document.getElementById(this.id);
+        vw.style.width = "28%";
+        vw.style.float = "left";
+        vw.style.height = "75%";
+        vw.style.padding = "5%";
+        vw.style.border = "orange solid 1px";
+    }
+}
 
-var CLI = { Iam:"This is a CLI object", 
-        init : function () {
+var view = { Iam:"A view - Used for presenting data", 
+        
+        init : function() {
+            var vw = document.getElementById("");
+            vw.style.width = "28%";
+            vw.style.float = "left";
+            vw.style.height = "75%";
+            vw.style.padding = "5%";
+        
+        }
+    
+    };
+
+var CLI = { Iam:"The CLI - This is a CLI object", 
+        
+        init : function() {
             var cli = document.getElementById("cli");
             cli.style.border = "none";
             cli.style.padding = "25px";
