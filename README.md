@@ -11,6 +11,7 @@ Needs adding at the end of the page for loading.
 * Simple way of creating commands for the bar.
 * Aim to not have to use cli.js to add commands (Linked to classes suppose).
 * Find a way of loading the CSS parts at start of page load, so that it doesnt flash up. (there may be a document.preload or something).
+* Up and Down keys for cycling through history.
 
 ## FUTURE
 * Able to switch views and copy to second panel.
