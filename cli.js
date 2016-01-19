@@ -38,7 +38,8 @@ function run() {
         break;
         default:
             //document.getElementById("cli").style.outline = "red thick solid";
-            cli.style.outline = "red thick solid";
+            //cli.style.outline = "red thick solid";
+            CLI.wrong();
     }
 }
 
@@ -53,6 +54,9 @@ var CLI = { Iam:"This is a CLI object",
             cli.style.maxWidth = "100%";
             cli.style.overflow = "hidden";
             cli.style.outline = "blue thick solid";
+        },
+        wrong : function () {
+            document.getElementById("cli").style.outline = "red thick solid";
         }
     };
 
