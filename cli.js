@@ -23,8 +23,6 @@ function run() {
     var input = cli.value.split(" ");
     cli.value = "";
     var inp = input[0];
-    //console.log(input);
-    //document.getElementById("cli").style.outline = "blue thick solid";
     cli.style.outline = "blue thick solid";
     
     var v1 = document.getElementById("view1");
@@ -37,8 +35,6 @@ function run() {
             v2.innerHTML = "Jello"; 
         break;
         default:
-            //document.getElementById("cli").style.outline = "red thick solid";
-            //cli.style.outline = "red thick solid";
             CLI.wrong();
     }
 }
@@ -55,7 +51,7 @@ function View (id) {
     }
 }
 
-var view = { Iam:"A view - Used for presenting data", 
+var view = { Iam:"A View - Used for presenting data", 
         
         init : function() {
             var vw = document.getElementById("");
@@ -63,7 +59,6 @@ var view = { Iam:"A view - Used for presenting data",
             vw.style.float = "left";
             vw.style.height = "75%";
             vw.style.padding = "5%";
-        
         }
     
     };
@@ -84,5 +79,4 @@ var CLI = { Iam:"The CLI - This is a CLI object",
             document.getElementById("cli").style.outline = "red thick solid";
         }
     };
-
 
