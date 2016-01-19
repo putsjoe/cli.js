@@ -1,12 +1,4 @@
 document.onload = document.getElementById("cli").focus();
-var cli = document.getElementById("cli");
-cli.style.border = "none";
-cli.style.padding = "25px";
-cli.style.fontSize = "22";
-cli.style.width = "100%";
-cli.style.maxWidth = "100%";
-cli.style.overflow = "hidden";
-cli.style.outline = "blue thick solid";
 
 var clidiv = document.getElementById("clidiv");
 clidiv.style.width = "50%";
@@ -51,6 +43,17 @@ function run() {
 }
 
 
-var CLI = { Iam:"CLI object" };
+var CLI = { Iam:"This is a CLI object", 
+        init : function () {
+            var cli = document.getElementById("cli");
+            cli.style.border = "none";
+            cli.style.padding = "25px";
+            cli.style.fontSize = "22";
+            cli.style.width = "100%";
+            cli.style.maxWidth = "100%";
+            cli.style.overflow = "hidden";
+            cli.style.outline = "blue thick solid";
+        }
+    };
 
 
