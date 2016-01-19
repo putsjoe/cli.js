@@ -51,6 +51,7 @@ function View (id) {
     }
 }
 
+
 var view = { Iam:"A View - Used for presenting data", 
         
         init : function() {
@@ -63,8 +64,27 @@ var view = { Iam:"A View - Used for presenting data",
     
     };
 
+function CLI (id) {
+    this.id = id;
+    this.Iam = "The CLI - This is a CLI object"; 
+    this.init = function() {
+        var cli = document.getElementById("cli");
+        cli.style.border = "none";
+        cli.style.padding = "25px";
+        cli.style.fontSize = "22";
+        cli.style.width = "100%";
+        cli.style.maxWidth = "100%";
+        cli.style.overflow = "hidden";
+        cli.style.outline = "blue thick solid";
+    }
+    this.wrong = function() {
+            document.getElementById("cli").style.outline = "red thick solid";
+    }
+    
+}
+
+/*
 var CLI = { Iam:"The CLI - This is a CLI object", 
-        
         init : function() {
             var cli = document.getElementById("cli");
             cli.style.border = "none";
@@ -79,4 +99,5 @@ var CLI = { Iam:"The CLI - This is a CLI object",
             document.getElementById("cli").style.outline = "red thick solid";
         }
     };
-
+*/
+    
